@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">
+	<title>HERBAL360</title>
+</head>
+
+<body>
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> Herbal 360</a>
+		<ul class="side-menu">
+			<li>
+				<a href="index (1).html" class="active">
+					<i class='bx bxs-dashboard icon'></i>Report</a>
+			</li>
+			<li>
+				<a href="/cust.html" class="">
+					<i class='bx bxs-dashboard icon'></i>customer</a>
+			</li>
+			<li>
+				<a href="staff.html" class="">
+					<i class='bx bxs-dashboard icon'></i>Staff's</a>
+			</li>
+			<li>
+				<a href="prod.html" class="">
+					<i class='bx bxs-dashboard icon'></i>Product</a>
+			</li>
+		</ul>
+		<ul class="side-menu mt-5">
+			<li>
+				<a href="#" class="">
+					<i class='bx bxs-dashboard icon'></i>Logout</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar'></i>
+			<form action="#">
+				<div class="form-group">
+					<p id="demo"></p>
+
+					<script>
+						const d = new Date();
+						document.getElementById("demo").innerHTML = d;
+					</script>
+
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon'></i>
+				<span class="badge">5</span>
+			</a>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon'></i>
+				<span class="badge">8</span>
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+					alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<!-- <ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">Dashboard</a></li>
+			</ul> -->
+			<div class="info-data">
+				<div class="con">
+					<div class="card">
+						<div class="head">
+							<h2>Stack Available</h2>
+							<!-- <i class='bx bx-trending-up icon'></i> -->
+						</div>
+						<span class="progress" data-value="20%"></span>
+						<span class="progress" data-value="40%"></span>
+						<span class="progress" data-value="60%"></span>
+						<span class="progress" data-value="80%"></span>
+						<!-- <span class="label">40%</span> -->
+					</div>
+					<div class="row mt-3" style="display: flex;">
+						<div class="col boxs">
+							<h1 class="font-semibold text-3xl text-orange-500">32</h1>
+							<p class="font-semibold text-1xl">Orders placed</p>
+							<a href="" class="text-blue-600 underline">Veiw Orders</a>
+						</div>
+						<div class="col boxs">
+							<h1 class="font-semibold text-3xl text-orange-500">12</h1>
+							<p class="font-semibold text-1xl">Bottels Received</p>
+							<a href="" class="text-blue-600 underline">Veiw staff</a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>Product Availability</h2>
+						</div>
+					</div>
+					<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+					<script type="text/javascript">
+						
+					</script>
+					<div id="columnchart_material" style="width: 480px; height: 300px;"></div>
+				</div>
+			</div>
+			<div class="data">
+				<div class="content-data">
+					<div class="head">
+						<h2>Sales Report</h2>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="chart"></div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
