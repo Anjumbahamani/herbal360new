@@ -154,28 +154,6 @@ li {
 #sidebar .side-dropdown a:hover {
 	color: var(--blue);
 }
-#sidebar .ads {
-	width: 100%;
-	padding: 20px;
-}
-#sidebar.hide .ads {
-	display: none;
-}
-#sidebar.hide:hover .ads {
-	display: block;
-}
-#sidebar .ads .wrapper {
-	background: var(--grey);
-	padding: 20px;
-	border-radius: 10px;
-}
-
-/* SIDEBAR */
-
-
-
-
-
 /* CONTENT */
 #content {
 	position: relative;
@@ -331,14 +309,13 @@ main .card .head h2 {
 	font-size: 24px;
 	font-weight: 600;
 }
-
-main .card .head .icon {
+/* main .card .head .icon {
 	font-size: 20px;
 	color: var(--green);
 }
 main .card .head .icon.down {
 	color: var(--red);
-}
+} */
 main .card .progress {
 	display: block;
 	margin-top: 24px;
@@ -358,10 +335,6 @@ main .card .progress::before {
 	height: 100%;
 	background: var(--blue);
 	width: var(--value);
-}
-main .card .label {
-	font-size: 14px;
-	font-weight: 700;
 }
 .boxs{
      background-color: white;
@@ -546,12 +519,6 @@ main .btn-send:hover {
 	}
 }
 /* CONTENT */
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
 	#content {
 		position: relative;
